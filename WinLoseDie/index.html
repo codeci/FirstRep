@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Win Lose or Die - Dice Game</title>
+		<link rel="stylesheet" type="text/css" href="WLD.css"></style>
+		
+	</head>
+	<body id = "body_id">
+		<div id ="heading">  
+			<h1>Win Lose or Die - Dice Game</h1>
+		</div>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+		
+		
+		  <!-- Modal content -->
+		  <div class="modal-content">
+<!-- 			<span class="close">X</span> -->
+			<img src = "img\animated-dice.gif" class ="imgClass" alt="oops!" style="float:left">
+			<img src = "img\animated-dice.gif" class ="imgClass" alt="oops!" style="float:right">
+			<p><h1>Welcome to 'Win Lose or Die!'</br>How many people are playing today?</h1></p></br>
+			<p><input id ="playVal" class = "splash" type="number" value="2" name="quantity" min="1" max="6"><input id = "btnVal" class = "splash" type="submit"></p>
+		  </div>
+		</div>
+		<!-- The Modal -->
+		<script src="WLD.js"></script>
+		
+		<label>Rolling Area (Drag & Drop the Dice you wish to keep, into the Keep area...)</label>
+		<div id = "mat">
+			<div id = "roller"></div>
+			<div id ="roll_area" draggable=false></div>
+		</div>
+		<label>Keep</label>
+		<div id = "mat2">
+			<div id = "stopper"></div>				
+			<div id = "middle" ondrop="drop(event)" ondragover="allowDrop(event)">
+			</div>
+		</div>
+		<div id = "bottom">
+			<label id="lrule">Rules</label>
+ 			<div id = "rules">
+				<ol>
+					<li>Need a minimum of 1000 points on a roll before your points can accumulate</li>
+					<li>Three of a kind are worth 100 points times the number rolled (Except 3 x 1s = 1000)<span class = "sclass">*HAS TO BE SAME ROLL</span></li>
+					<li>Four of a kind is worth double the three of a kind total<span class = "sclass">*HAS TO BE SAME ROLL</span></li>
+					<li>Five of a kind is worth double the four of a kind total<span class = "sclass">*HAS TO BE SAME ROLL</span></li>
+					<li>Straights are 1000 points (1,2,3,4,5 or 2,3,4,5,6)<span class = "sclass">*HAS TO BE SAME ROLL</span></li>
+					<li>First to 10,000 wins. (Must land on 10,000 exactly)</li>
+				</ol>
+			</div>  
+			<br/>			
+			<div id = "details" class="details">
+
+			</div>			 
+		</div>
+<!--  		<div id="vars">
+			This is where variables will show up
+		</div>
+		<div id = "funcs">
+			Function variables</br>
+		</div> -->
+	</body>
+	
+</html>
+

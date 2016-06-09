@@ -1,0 +1,36 @@
+/* Cards swipe game using Jquery */
+
+body {
+	
+	width:inherit;
+	height:inherit;
+	
+
+}
+
+#kheart {
+	border-style:solid;
+	border-radius: 11px;
+	height:inherit;
+	background-color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#deck {
+	width:95%;
+	height:95%;
+	background-color:green;
+	border:solid black;
+	padding:10px;
+	margin:20px;
+}
+
+#card {
+	width:95%;
+	height:95%;
+	background-color:yellow;
+	border:solid black;
+	padding:10px;
+	margin:20px;
+}
